@@ -116,6 +116,22 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>        
+		
+		
+		<!-- lombok 추가하기 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.2</version>
+		</dependency>
+		
+		<!--  spring-test 추가하기 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+	
 	</dependencies>
     <build>
         <plugins>

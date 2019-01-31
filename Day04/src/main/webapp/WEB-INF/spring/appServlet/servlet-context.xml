@@ -21,8 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<!--  -->
-	<context:component-scan base-package="kr.or.spring.day03.controller" />
+	<context:component-scan base-package="kr.co.spring" />
 	
 	
 	
