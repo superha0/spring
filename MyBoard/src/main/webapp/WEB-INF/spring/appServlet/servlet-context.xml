@@ -7,12 +7,6 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	
-	<!--
-		servlet-context.xml에는 웹에 관련된 Bean이 설정된다.
-		controller, intercepter 등등..
-	-->
-
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
@@ -23,14 +17,11 @@
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<!-- jsp 파일의 경로를 담당한다. -->
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<!-- 특정 어노테이션이 붙은 클래스를 자동으로 Bean으로 만듦 -->
-	<!-- @Controller가 붙은 클래스를 Controller Bean으로 만들어 줌 -->
-	<context:component-scan base-package="kr.co.spring.day06.controller" />
+	<context:component-scan base-package="com.spring.myboard.controller" />
 	
 	
 	
